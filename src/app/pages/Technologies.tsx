@@ -222,7 +222,7 @@ export default function Technologies() {
                   {tech.description}
                 </p>
               </div>
-              <div className="text-[11px] font-mono bg-slate-100 text-slate-600 px-3 py-2 rounded-lg border border-slate-200 inline-block w-max group-hover:bg-[#6633CC]/5 group-hover:text-[#6633CC] group-hover:border-[#6633CC] transition-colors">
+              <div className="text-[11px] font-mono bg-slate-100 text-slate-600 px-3 py-2 rounded-lg border border-slate-200 inline-block w-max ">
                 {tech.tag}
               </div>
             </motion.div>

@@ -258,11 +258,11 @@ export default function CaseStudies() {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            className="max-w-5xl mx-auto rounded-[3rem] bg-slate-50 border border-slate-200 p-12 md:p-20 text-center relative overflow-hidden"
+            className="max-w-5xl mx-auto rounded-[3rem] bg-slate-50 border border-slate-200 p-12 md:p-15 text-center relative overflow-hidden"
           >
             <div className="absolute top-0 right-0 w-96 h-96 bg-[#6633CC]/5 blur-[100px] -translate-y-1/2 translate-x-1/2" />
 
-            <h2 className="text-3xl md:text-5xl font-display font-black text-slate-900 mb-8">
+            <h2 className="text-3xl md:text-5xl font-display font-black text-slate-900 mb-8 leading-15">
               Have a project in mind? <br />
               <span className="text-slate-400">
                 Let's build the future together.
@@ -276,10 +276,10 @@ export default function CaseStudies() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <button className="px-10 py-5 bg-[#6633CC] text-white font-black text-[13px] uppercase tracking-[0.2em] rounded-full transition-all hover:scale-105 shadow-[0_20px_40px_rgba(102,51,204,0.3)]">
+              <button className="px-8 py-4 bg-[#6633CC] text-white font-bold text-[10px] uppercase tracking-[0.2em] rounded-full transition-all hover:scale-105 shadow-[0_20px_40px_rgba(102,51,204,0.3)]">
                 Contact Sales
               </button>
-              <button className="px-10 py-5 bg-white border border-slate-200 text-slate-900 font-black text-[13px] uppercase tracking-[0.2em] rounded-full transition-all hover:bg-slate-50">
+              <button className="px-8 py-4 bg-white border border-slate-200 text-slate-900 font-bold text-[10px] uppercase tracking-[0.2em] rounded-full transition-all hover:bg-slate-50">
                 View Resources
               </button>
             </div>
@@ -287,11 +287,11 @@ export default function CaseStudies() {
         </section>
 
         {/* FOOTER MINI */}
-        <footer className="py-12 px-6 border-t border-slate-100 text-center">
+        {/* <footer className="py-12 px-6 border-t border-slate-100 text-center">
           <p className="text-slate-400 text-xs font-mono tracking-widest uppercase">
             Varicon Aqua Solutions © 2026 // Precision Cultivation Systems
           </p>
-        </footer>
+        </footer> */}
       </div>
     </div>
   );
