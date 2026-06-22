@@ -57,9 +57,9 @@ export function About() {
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             >
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#6633CC]/5 border border-[#6633CC]/10 mb-8">
-                <span className="w-2 h-2 rounded-full bg-[#6633CC] animate-ping" />
+                <span className="w-2 h-2 rounded-full bg-[#6633CC]" />
                 <span className="text-[10px] font-black tracking-[0.2em] text-[#6633CC] uppercase">
-                  Established 1994
+                  Established 2004
                 </span>
               </div>
 
@@ -84,7 +84,7 @@ export function About() {
                 ].map((stat, i) => (
                   <div
                     key={i}
-                    className="flex flex-col items-center px-8 border-x border-[#6633CC]/10 first:border-l-0 last:border-r-0"
+                    className="flex flex-col items-center px-8 border-r border-[#6633CC]/10 last:border-r-0"
                   >
                     <span className="text-3xl font-black text-[#1A1A2E]">
                       {stat.val}
@@ -235,7 +235,7 @@ export function About() {
                   Vertical Integration
                 </h3>
                 <p className="text-[#6B7280] text-lg leading-relaxed max-w-md">
-                  We control every aspect of the process—from the initial design
+                  We control every aspect of the process from the initial design
                   and 3D modeling to in-house fabrication and global
                   installation. This end-to-end oversight guarantees the
                   reliability our clients demand.

@@ -68,7 +68,7 @@ const CASE_STUDIES: CaseStudy[] = [
     location: "Temse, Belgium",
     category: "Sustainable Agriculture",
     description:
-      "A forward-thinking farm-based enterprise seeking to produce Chlorella—a nutrient-rich microalgae—as a novel food stream, tapping into emerging consumer demand for sustainable, high-quality protein sources.",
+      "A forward-thinking farm-based enterprise seeking to produce Chlorella-a nutrient-rich microalgae-as a novel food stream, tapping into emerging consumer demand for sustainable, high-quality protein sources.",
     image:
       "https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&q=80&w=800",
     impactMetrics: [
@@ -106,12 +106,12 @@ function CaseStudyCard({ study }: { study: CaseStudy }) {
       </div>
 
       <div className="p-8">
-        <div className="flex items-center gap-2 mb-4 text-[#6633CC] font-mono text-[11px] uppercase tracking-widest font-bold">
+        <div className="flex items-center gap-2 mb-2 text-[#6633CC] font-mono text-[11px] uppercase tracking-widest font-bold">
           <Globe className="w-3 h-3" />
           {study.location}
         </div>
 
-        <h3 className="text-2xl font-display font-black text-slate-900 mb-4 leading-tight group-hover:text-[#6633CC] transition-colors">
+        <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#6633CC] transition-colors">
           {study.title}
         </h3>
 
@@ -125,10 +125,10 @@ function CaseStudyCard({ study }: { study: CaseStudy }) {
               key={i}
               className="bg-slate-50 border border-slate-100 rounded-2xl p-4"
             >
-              <div className="text-[10px] text-slate-400 uppercase font-black tracking-widest mb-1">
+              <div className="text-[10px] text-slate-400 uppercase font-normal tracking-widest mb-1">
                 {metric.label}
               </div>
-              <div className="text-lg font-display font-black text-slate-900">
+              <div className="text-lg font-semibold text-slate-700">
                 {metric.value}
               </div>
             </div>
@@ -170,7 +170,7 @@ export default function CaseStudies() {
 
       {/* ORB DECORATION */}
       <div className="fixed top-0 right-0 w-[800px] h-[800px] bg-[#6633CC]/5 blur-[150px] -translate-y-1/2 translate-x-1/4 z-0 pointer-events-none" />
-      <div className="fixed bottom-0 left-0 w-[600px] h-[600px] bg-[#2DD4BF]/5 blur-[120px] translate-y-1/2 -translate-x-1/4 z-0 pointer-events-none" />
+      <div className="fixed bottom-0 left-0 w-[600px] h-[600px] bg-[#6633CC]/5 blur-[120px] translate-y-1/2 -translate-x-1/4 z-0 pointer-events-none" />
 
       <div className="relative z-10">
         {/* HERO SECTION */}

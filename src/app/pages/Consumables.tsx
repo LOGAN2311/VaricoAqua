@@ -163,18 +163,18 @@ interface ConsumableCardProps {
 
 function ConsumableCard({ data, isPartner = false }: ConsumableCardProps) {
   const tagStyles: Record<ConsumableItem["tagType"], string> = {
-    marine: "bg-blue-50 text-blue-700 border-blue-200",
-    fresh: "bg-emerald-50 text-emerald-700 border-emerald-200",
+    marine: "bg-purple-50 text-purple-700 border-purple-200",
+    fresh: "bg-purple-50 text-purple-700 border-purple-200",
     org: "bg-purple-50 text-purple-700 border-purple-200",
-    partner: "bg-orange-50 text-orange-700 border-orange-200",
+    partner: "bg-purple-50 text-purple-700 border-purple-200",
   };
 
   const cardColors: Record<string, string> = {
     "SYS.CH-F2P": "bg-[#EBF7F9]", // Cyan-ish
     "SYS.CH-WP": "bg-[#FBF4EF]", // Warm Peach
-    "SYS.CH-JWP": "bg-[#F1F9F4]", // Soft Green
+    "SYS.CH-JWP": "bg-[#F8F5FF]", // Soft Purple
     "SYS.CH-HP": "bg-[#F1F7FB]", // Soft Blue
-    "SYS.CH-SP": "bg-[#F1F9F7]", // Soft Teal
+    "SYS.CH-SP": "bg-[#F8F5FF]", // Soft Purple
     "SYS.CH-BIO": "bg-[#F5F3F9]", // Lavender
     "DIST.INVE": "bg-[#FBF7F1]", // Sand/Tan
     "DIST.REED": "bg-[#FBF2EF]", // Rosy Peach
@@ -186,11 +186,11 @@ function ConsumableCard({ data, isPartner = false }: ConsumableCardProps) {
         y: -8,
         transition: { duration: 0.3, ease: "easeOut" },
       }}
-      className={`group ${cardColors[data.sku] || "bg-white"} border border-slate-200 rounded-3xl p-8 h-[380px] flex flex-col justify-between transition-all duration-300 hover:border-teal-500/30 hover:shadow-[0_20px_50px_-12px_rgba(13,148,136,0.12)]`}
+      className={`group ${cardColors[data.sku] || "bg-white"} border border-slate-100 rounded-3xl p-8 h-[380px] flex flex-col justify-between transition-all duration-300 hover:border-[#6633CC]/30 hover:shadow-[0_20px_50px_-12px_rgba(102,51,204,0.12)]`}
     >
       <div>
         <div className="flex justify-between items-center mb-6">
-          <span className="font-mono text-[10px] text-slate-400 font-bold tracking-widest">
+          <span className="font-mono text-[10px] text-slate-600 font-bold tracking-widest">
             {data.sku}
           </span>
           <span
@@ -204,29 +204,29 @@ function ConsumableCard({ data, isPartner = false }: ConsumableCardProps) {
           <div
             className={`p-2.5 rounded-xl transition-colors duration-300 ${
               isPartner
-                ? "bg-orange-50 text-orange-600 group-hover:bg-orange-100"
-                : "bg-teal-50 text-teal-600 group-hover:bg-teal-100"
+                ? "bg-orange-50 text-[#6633CC] group-hover:bg-orange-100"
+                : "bg-[#F8F5FF] text-[#6633CC] group-hover:bg-[#6633CC]/10"
             }`}
           >
             {data.icon}
           </div>
-          <h3 className="text-xl font-black text-[#6633CC] tracking-tight group-hover:text-teal-700 transition-colors">
+          <h3 className="text-xl font-black text-[#6633CC] tracking-tight group-hover:text-[#6633CC] transition-colors">
             {data.title}
           </h3>
         </div>
 
         <div
-          className={`font-mono text-[11px] font-bold mb-5 ${isPartner ? "text-orange-500" : "text-emerald-500"}`}
+          className={`font-mono text-[11px] font-bold mb-5 ${isPartner ? "text-[#6633CC]" : "text-[#6633CC]"}`}
         >
           {data.formula}
         </div>
 
-        <p className="text-sm text-slate-500 leading-relaxed line-clamp-3 group-hover:text-slate-600 transition-colors">
+        <p className="text-sm text-slate-600 leading-relaxed line-clamp-3 group-hover:text-slate-600 transition-colors">
           {data.description}
         </p>
       </div>
 
-      <div className="border-t border-slate-100 pt-6 grid grid-cols-2 gap-4">
+      <div className="border-t border-[#6633CC]/5 pt-6 grid grid-cols-2 gap-4">
         {data.specs.map((spec: Spec, i: number) => (
           <div key={i} className="flex flex-col gap-0.5">
             <span className="text-[9px] font-bold uppercase tracking-widest text-slate-400">
@@ -247,7 +247,7 @@ export function Consumables() {
     <div className="min-h-screen bg-[#FDFDFF] text-slate-900 selection:bg-[#6633CC]/10 font-['Plus_Jakarta_Sans',sans-serif]">
       {/* ORB DECORATION */}
       <div className="fixed top-0 right-0 w-[800px] h-[800px] bg-[#6633CC]/5 blur-[150px] -translate-y-1/2 translate-x-1/4 z-0 pointer-events-none" />
-      <div className="fixed bottom-0 left-0 w-[600px] h-[600px] bg-[#2DD4BF]/5 blur-[120px] translate-y-1/2 -translate-x-1/4 z-0 pointer-events-none" />
+      <div className="fixed bottom-0 left-0 w-[600px] h-[600px] bg-[#6633CC]/5 blur-[120px] translate-y-1/2 -translate-x-1/4 z-0 pointer-events-none" />
 
       <div className="relative z-10">
         {/* Header */}

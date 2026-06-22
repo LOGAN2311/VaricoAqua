@@ -201,7 +201,7 @@ export default function Technologies() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.3 }}
-              className="group glass-card rounded-2xl p-6 bg-white/80 backdrop-blur-md border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-500 flex flex-col justify-between"
+              className="group glass-card rounded-2xl p-6 bg-white/80 backdrop-blur-md border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-[#6633CC]/40 transition-all duration-500 flex flex-col justify-between"
             >
               <div>
                 <div className="relative w-full h-52 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 mb-6">
@@ -210,19 +210,19 @@ export default function Technologies() {
                     alt={tech.title}
                     className="w-full h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-emerald-900/0 group-hover:bg-emerald-900/10 transition-colors duration-500"></div>
+                  <div className="absolute inset-0 bg-[#6633CC]/0 group-hover:bg-[#6633CC]/10 transition-colors duration-500"></div>
                 </div>
-                <span className="text-xs font-mono font-bold text-emerald-600 tracking-widest block mb-2 uppercase">
+                <span className="text-xs font-mono font-bold text-[#6633CC] tracking-widest block mb-2 uppercase">
                   {tech.category}
                 </span>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-emerald-700 transition-colors">
+                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#6633CC] transition-colors">
                   {tech.title}
                 </h3>
                 <p className="text-slate-500 text-sm leading-relaxed mb-6">
                   {tech.description}
                 </p>
               </div>
-              <div className="text-[11px] font-mono bg-slate-100 text-slate-600 px-3 py-2 rounded-lg border border-slate-200 inline-block w-max group-hover:bg-emerald-50 group-hover:text-emerald-700 group-hover:border-emerald-200 transition-colors">
+              <div className="text-[11px] font-mono bg-slate-100 text-slate-600 px-3 py-2 rounded-lg border border-slate-200 inline-block w-max group-hover:bg-[#6633CC]/5 group-hover:text-[#6633CC] group-hover:border-[#6633CC] transition-colors">
                 {tech.tag}
               </div>
             </motion.div>

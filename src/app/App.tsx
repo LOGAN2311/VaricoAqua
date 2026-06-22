@@ -55,11 +55,11 @@ function Navbar() {
           <div className="group relative">
             <Link
               to="/technologies"
-              className="inline-flex items-center gap-x-1.5 text-sm font-medium text-gray-700 transition-colors duration-200 group-hover:text-teal-600 py-5"
+              className="inline-flex items-center gap-x-1.5 text-sm font-medium text-gray-700 transition-colors duration-200 group-hover:text-[#6633CC] py-5"
             >
               <span>Technologies</span>
               <svg
-                className="h-4 w-4 text-gray-400 transition-transform duration-200 group-hover:rotate-180 group-hover:text-teal-600"
+                className="h-4 w-4 text-gray-400 transition-transform duration-200 group-hover:rotate-180 group-hover:text-[#6633CC]"
                 viewBox="0 0 20 20"
                 fill="currentColor"
                 aria-hidden="true"
@@ -79,7 +79,7 @@ function Navbar() {
                 <div className="group/sub relative">
                   <Link
                     to="/technologies"
-                    className="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-gray-900 transition-colors duration-150 hover:bg-gray-50 hover:text-teal-600"
+                    className="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-gray-900 transition-colors duration-150 hover:bg-gray-50 hover:text-[#6633CC]"
                   >
                     <span>Phyco-Range</span>
                     <svg
@@ -99,19 +99,19 @@ function Navbar() {
                     <div className="rounded-xl border border-gray-100 bg-white p-2 shadow-lg">
                       <Link
                         to="/technologies"
-                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-teal-600"
+                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-[#6633CC]"
                       >
                         Phyco-Flow™
                       </Link>
                       <Link
                         to="/technologies"
-                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-teal-600"
+                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-[#6633CC]"
                       >
                         Phyco-Lift™
                       </Link>
                       <Link
                         to="/technologies"
-                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-teal-600"
+                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-[#6633CC]"
                       >
                         Phyco-Bubble™
                       </Link>
@@ -123,7 +123,7 @@ function Navbar() {
                 <div className="group/sub relative">
                   <Link
                     to="/technologies"
-                    className="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-gray-900 transition-colors duration-150 hover:bg-gray-50 hover:text-teal-600"
+                    className="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-gray-900 transition-colors duration-150 hover:bg-gray-50 hover:text-[#6633CC]"
                   >
                     <span>Aquaculture</span>
                     <svg
@@ -142,13 +142,13 @@ function Navbar() {
                     <div className="rounded-xl border border-gray-100 bg-white p-2 shadow-lg">
                       <Link
                         to="/technologies"
-                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-teal-600"
+                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-[#6633CC]"
                       >
                         High-Density Rotifer (HDRS)
                       </Link>
                       <Link
                         to="/technologies"
-                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-teal-600"
+                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-[#6633CC]"
                       >
                         Artemia Harvesters
                       </Link>
@@ -160,7 +160,7 @@ function Navbar() {
                 <div className="group/sub relative">
                   <Link
                     to="#"
-                    className="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-gray-900 transition-colors duration-150 hover:bg-gray-50 hover:text-teal-600"
+                    className="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-gray-900 transition-colors duration-150 hover:bg-gray-50 hover:text-[#6633CC]"
                   >
                     <span>Downstream Processing</span>
                     <svg
@@ -179,13 +179,13 @@ function Navbar() {
                     <div className="rounded-xl border border-gray-100 bg-white p-2 shadow-lg">
                       <Link
                         to="#"
-                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-teal-600"
+                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-[#6633CC]"
                       >
                         Centrifuge Systems
                       </Link>
                       <Link
                         to="#"
-                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-teal-600"
+                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-[#6633CC]"
                       >
                         Membrane Filtration
                       </Link>
@@ -197,7 +197,7 @@ function Navbar() {
                 <div className="group/sub relative">
                   <Link
                     to="#"
-                    className="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-gray-900 transition-colors duration-150 hover:bg-gray-50 hover:text-teal-600"
+                    className="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-gray-900 transition-colors duration-150 hover:bg-gray-50 hover:text-[#6633CC]"
                   >
                     <span>Control Systems</span>
                     <svg
@@ -216,7 +216,7 @@ function Navbar() {
                     <div className="rounded-xl border border-gray-100 bg-white p-2 shadow-lg">
                       <Link
                         to="#"
-                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-teal-600"
+                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-[#6633CC]"
                       >
                         VariConnect™ Monitoring
                       </Link>
@@ -231,11 +231,11 @@ function Navbar() {
           <div className="group relative">
             <Link
               to="/consumables"
-              className="inline-flex items-center gap-x-1.5 text-sm font-medium text-gray-700 transition-colors duration-200 group-hover:text-teal-600 py-5"
+              className="inline-flex items-center gap-x-1.5 text-sm font-medium text-gray-700 transition-colors duration-200 group-hover:text-[#6633CC] py-5"
             >
               <span>Consumables</span>
               <svg
-                className="h-4 w-4 text-gray-400 transition-transform duration-200 group-hover:rotate-180 group-hover:text-teal-600"
+                className="h-4 w-4 text-gray-400 transition-transform duration-200 group-hover:rotate-180 group-hover:text-[#6633CC]"
                 viewBox="0 0 20 20"
                 fill="currentColor"
                 aria-hidden="true"
@@ -255,7 +255,7 @@ function Navbar() {
                 <div className="group/sub relative">
                   <Link
                     to="/consumables"
-                    className="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-gray-900 transition-colors duration-150 hover:bg-gray-50 hover:text-teal-600"
+                    className="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-gray-900 transition-colors duration-150 hover:bg-gray-50 hover:text-[#6633CC]"
                   >
                     <span>Cell-Hi Nutrient Range</span>
                     <svg
@@ -274,19 +274,19 @@ function Navbar() {
                     <div className="rounded-xl border border-gray-100 bg-white p-2 shadow-lg">
                       <Link
                         to="/consumables"
-                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-teal-600"
+                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-[#6633CC]"
                       >
                         Cell-Hi F2P (Saltwater)
                       </Link>
                       <Link
                         to="/consumables"
-                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-teal-600"
+                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-[#6633CC]"
                       >
                         Cell-Hi JWP (Freshwater)
                       </Link>
                       <Link
                         to="/consumables"
-                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-teal-600"
+                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-[#6633CC]"
                       >
                         Cell-Hi BIO (Organic)
                       </Link>
@@ -298,7 +298,7 @@ function Navbar() {
                 <div className="group/sub relative">
                   <Link
                     to="/consumables"
-                    className="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-gray-900 transition-colors duration-150 hover:bg-gray-50 hover:text-teal-600"
+                    className="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-gray-900 transition-colors duration-150 hover:bg-gray-50 hover:text-[#6633CC]"
                   >
                     <span>Live Feed Products</span>
                     <svg
@@ -317,13 +317,13 @@ function Navbar() {
                     <div className="rounded-xl border border-gray-100 bg-white p-2 shadow-lg">
                       <Link
                         to="/consumables"
-                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-teal-600"
+                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-[#6633CC]"
                       >
                         Premium Artemia Cysts
                       </Link>
                       <Link
                         to="/consumables"
-                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-teal-600"
+                        className="block rounded-lg px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50 hover:text-[#6633CC]"
                       >
                         Rotifer Inocula
                       </Link>
@@ -337,7 +337,7 @@ function Navbar() {
           {/* 3. CASE STUDIES */}
           <Link
             to="/case-studies"
-            className="text-sm font-medium text-gray-700 transition-colors duration-200 hover:text-teal-600"
+            className="text-sm font-medium text-gray-700 transition-colors duration-200 hover:text-[#6633CC]"
           >
             Case Studies
           </Link>
@@ -345,7 +345,7 @@ function Navbar() {
           {/* 4. ABOUT US */}
           <Link
             to="/about"
-            className="text-sm font-medium text-gray-700 transition-colors duration-200 hover:text-teal-600"
+            className="text-sm font-medium text-gray-700 transition-colors duration-200 hover:text-[#6633CC]"
           >
             About Us
           </Link>
@@ -353,7 +353,7 @@ function Navbar() {
           {/* 5. CONTACT US */}
           <Link
             to="/contact"
-            className="text-sm font-medium text-gray-700 transition-colors duration-200 hover:text-teal-600"
+            className="text-sm font-medium text-gray-700 transition-colors duration-200 hover:text-[#6633CC]"
           >
             Contact Us
           </Link>
@@ -363,13 +363,13 @@ function Navbar() {
         <div className="flex flex-1 items-center justify-end gap-4">
           <Link
             to="/contact"
-            className="inline-flex items-center justify-center rounded-full bg-teal-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-200 ease-in-out hover:bg-teal-500 hover:shadow-md hover:-translate-y-0.5"
+            className="inline-flex items-center justify-center rounded-full bg-[#6633CC] px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-200 ease-in-out hover:bg-[#7e4edd] hover:shadow-md hover:-translate-y-0.5"
           >
             Get a Quote
           </Link>
           <button
             onClick={() => setOpen(!open)}
-            className="md:hidden p-2 text-gray-600 hover:text-teal-600"
+            className="md:hidden p-2 text-gray-600 hover:text-[#7e4edd]"
           >
             {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>

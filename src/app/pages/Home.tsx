@@ -67,8 +67,8 @@ function Hero() {
             x: [0, 150, 0],
             y: [0, 80, 0],
           }}
-          transition={{ duration: 25, repeat: Infinity, ease: "easeInOut" }}
-          className=" bg-[#2DD4BF]/1 rounded-full blur-[5px] pointer-events-none"
+          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+          className=" bg-[#6633CC]/1 rounded-full blur-[5px] pointer-events-none"
         />
         <motion.div
           animate={{
@@ -76,7 +76,7 @@ function Hero() {
             x: [0, -150, 0],
             y: [0, -80, 0],
           }}
-          transition={{ duration: 30, repeat: Infinity, ease: "easeInOut" }}
+          transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
           className=" bg-[#6633CC]/1 pointer-events-none"
         />
       </div>
@@ -101,8 +101,8 @@ function Hero() {
               to Cultivation
             </span>
           </h1>
-          <p className="font-body text-[#FFFFFF] max-w-2xl mx-auto text-xl mb-12 leading-relaxed">
-            From photobioreactors to fully automated control systems — Varicon
+          <p className="font-body text-[#FFFFFF] max-w-2xl mx-auto text-[1.3em] mb-12 leading-relaxed">
+            From photobioreactors to fully automated control systems, Varicon
             Aqua engineers the precision infrastructure that scales algae
             cultivation from lab bench to industrial production, worldwide.
           </p>
@@ -188,7 +188,7 @@ function StatsStrip() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="font-data text-[11px] font-medium tracking-[0.28em] uppercase text-[#6633CC] mb-3">
+          <p className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#6633CC]/10 border border-[#6633CC]/25 text-[#6633CC] text-[11px] font-semibold tracking-wider uppercase mb-6">
             Proven Performance
           </p>
           <h2 className="font-display font-black text-[clamp(32px,5vw,36px)] text-[#1A1A2E] mb-4">
@@ -246,7 +246,7 @@ const PRODUCT_TABS = [
       {
         Icon: Droplets,
         title: "Phyco-Lift",
-        desc: "Airlift PBR for gentle culture mixing with minimal shear stress — ideal for fragile strains.",
+        desc: "Airlift PBR for gentle culture mixing with minimal shear stress, ideal for fragile strains.",
         bg: "bg-white",
       },
       {
@@ -348,7 +348,7 @@ const PRODUCT_TABS = [
       name: "Cell-Hi Nutrient Range",
       tag: "Precision Cultivation Media",
       description:
-        "Scientifically formulated nutrient media developed for commercial microalgae cultivation. The Cell-Hi range provides optimal macro and micro-nutrient profiles across freshwater, marine, and high-productivity applications — including specialist formulations for EPA, pigment, and biomass targets.",
+        "Scientifically formulated nutrient media developed for commercial microalgae cultivation. The Cell-Hi range provides optimal macro and micro-nutrient profiles across freshwater, marine, and high-productivity applications including specialist formulations for EPA, pigment, and biomass targets.",
       specs: [
         { k: "Formulations", v: "6 specialist variants" },
         { k: "Target Species", v: "20+ algae strains" },
@@ -394,13 +394,13 @@ function ProductBento() {
           viewport={{ once: true }}
           className="text-center mb-14"
         >
-          <p className="font-data text-[11px] font-medium tracking-[0.28em] uppercase text-[#6633CC] mb-3">
+          <p className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#6633CC]/10 border border-[#6633CC]/25 text-[#6633CC] text-[11px] font-semibold tracking-wider uppercase mb-6">
             Cultivation Ecosystem
           </p>
           <h2 className="font-display font-black text-[clamp(32px,5vw,52px)] text-[#1A1A2E] mb-4">
             Engineering for Every Scale
           </h2>
-          <p className="font-body text-[#6B7280] max-w-lg mx-auto text-base leading-relaxed">
+          <p className="font-body text-[#6B7280] max-w-xl mx-auto text-base leading-relaxed">
             Explore our integrated ecosystem of cultivation solutions from our
             flagship.
           </p>
@@ -558,9 +558,9 @@ function Industries() {
     {
       Icon: Leaf,
       title: "Agriculture",
-      accent: "#22C55E",
+      accent: "#6633CC",
       description:
-        "Introducing novel microalgae crops for soil biostimulant, protein supplement, and sustainable fertiliser applications — supporting the circular bioeconomy.",
+        "Introducing novel microalgae crops for soil biostimulant, protein supplement, and sustainable fertiliser applications supporting the circular bioeconomy.",
       applications: [
         "Biostimulant production",
         "Crop protein supplementation",
@@ -591,7 +591,7 @@ function Industries() {
           viewport={{ once: true }}
           className="text-center mb-14"
         >
-          <p className="font-data text-[11px] font-medium tracking-[0.28em] uppercase text-[#6633CC] mb-3">
+          <p className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#6633CC]/10 border border-[#6633CC]/25 text-[#6633CC] text-[11px] font-semibold tracking-wider uppercase mb-6">
             Industries We Serve
           </p>
           <h2 className="font-display font-black text-[clamp(32px,5vw,52px)] text-[#1A1A2E] mb-4">
@@ -710,7 +710,7 @@ function TechShowcase() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           >
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#6633CC]/10 border border-[#6633CC]/25 text-[#6633CC] text-[11px] font-data font-semibold tracking-wider uppercase mb-6">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#6633CC]/10 border border-[#6633CC]/25 text-[#6633CC] text-[11px] font-semibold tracking-wider uppercase mb-6">
               <Cpu className="w-3 h-3" /> Variconnect™ Platform
             </span>
             <h2 className="font-display font-black text-[clamp(30px,4.5vw,48px)] text-[#1A1A2E] mb-5 leading-10">
@@ -768,15 +768,15 @@ function TechShowcase() {
               <div className="flex items-center justify-between mb-6">
                 <div>
                   <div className="font-data text-[10px] text-[#6B7280] uppercase tracking-widest mb-0.5">
-                    Variconnect™ — Live View
+                    Variconnect™ - Live View
                   </div>
                   <div className="font-display font-bold text-[#1A1A2E] text-sm">
-                    Phyco-Flow Unit 3 — Production Hall B
+                    Phyco-Flow Unit 3 Production Hall B
                   </div>
                 </div>
-                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-green-50 border border-green-200">
-                  <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-                  <span className="font-data text-[10px] text-green-600 font-semibold tracking-wider">
+                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#6633CC]/5 border border-[#6633CC]/10">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6633CC] animate-pulse" />
+                  <span className="font-data text-[10px] text-[#6633CC] font-semibold tracking-wider">
                     LIVE
                   </span>
                 </div>
@@ -900,11 +900,11 @@ function Pipeline() {
                 transition={{ duration: 0.5, delay: (i % 3) * 0.12 }}
                 className="relative rounded-2xl bg-white border border-[#6633CC]/10 p-6 overflow-hidden group hover:shadow-[0_8px_32px_rgba(102,51,204,0.12)] hover:border-[#6633CC]/25 transition-all duration-300"
               >
-                <div className="absolute -top-4 -right-2 font-display font-black leading-none select-none pointer-events-none text-[96px] text-[#6633CC]/5">
+                <div className="absolute -top-20 -right-2 font-display font-black leading-none select-none pointer-events-none text-[96px] text-[#6633CC]/5">
                   {phase.num}
                 </div>
                 <div className="flex items-start gap-3 mb-4 relative z-10">
-                  <div className="w-11 h-11 rounded-xl bg-[#6633CC]/10 border border-[#6633CC]/18 flex items-center justify-center shrink-0">
+                  <div className="w-11 h-11 rounded-xl top-[200px] bg-[#6633CC]/10 border border-[#6633CC]/18 flex items-center justify-center shrink-0">
                     <PhaseIcon className="w-5 h-5 text-[#6633CC]" />
                   </div>
                   <div className="mt-1 px-2 py-0.5 rounded-md font-data text-[10px] font-bold tracking-[0.14em] uppercase bg-[#6633CC]/10 text-[#6633CC]">
@@ -938,110 +938,41 @@ function Services() {
       title: "Connect",
       description:
         "Reach out to us and start the conversation around your ideas and goals.",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="2"
-          stroke="currentColor"
-          className="w-5 h-5"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
-          />
-        </svg>
-      ),
+      image:
+        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=400&auto=format&fit=crop",
     },
     {
       title: "Discover",
       description:
         "We understand your needs and uncover opportunities that create value.",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="2"
-          stroke="currentColor"
-          className="w-5 h-5"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-          />
-        </svg>
-      ),
+      image:
+        "https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=400&auto=format&fit=crop",
     },
     {
       title: "Strategize",
       description: "We define a clear direction and map the best way forward.",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="2"
-          stroke="currentColor"
-          className="w-5 h-5"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-          />
-        </svg>
-      ),
+      image:
+        "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=400&auto=format&fit=crop",
     },
     {
       title: "Design",
       description: "We shape ideas into thoughtful and practical solutions.",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="2"
-          stroke="currentColor"
-          className="w-5 h-5"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-3.388 1.62a15.998 15.998 0 01-3.388-1.62m0 0a3.046 3.046 0 01-.42-2.29m3.808 3.91a15.996 15.996 0 013.388-1.62m0 0a3.046 3.046 0 00.42-2.29m-3.808 3.91v-5.58c0-.66.313-1.285.842-1.69l3.92-3a2.25 2.25 0 112.7 3.6l-2.7 2.06v6.21m-2.69-7.462a15.996 15.996 0 003.388-1.62m-3.388 1.62a15.996 15.996 0 01-3.388-1.62"
-          />
-        </svg>
-      ),
+      image:
+        "https://images.unsplash.com/photo-1579389083078-4e7018379f7e?q=80&w=400&auto=format&fit=crop",
     },
     {
       title: "Prepare",
       description:
         "We lay the groundwork for smooth execution and future growth.",
-      icon: <Settings className="w-5 h-5" />,
+      image:
+        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=400&auto=format&fit=crop",
     },
     {
       title: "Print",
       description:
         "We bring concepts to life with 3D prototypes for faster validation.",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="2"
-          stroke="currentColor"
-          className="w-5 h-5"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"
-          />
-        </svg>
-      ),
+      image:
+        "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=400&auto=format&fit=crop",
     },
   ];
 
@@ -1106,13 +1037,13 @@ function Services() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.1, margin: "-100px" }}
           variants={containerVariants}
-          className="w-full p-8 sm:p-16 bg-white border border-slate-200 shadow-sm rounded-[2.5rem] text-slate-800 overflow-hidden"
+          className="w-full py-8 px-6 sm:py-16 sm:px-12 bg-white border border-slate-200 shadow-sm rounded-[2.5rem] text-slate-800 overflow-hidden"
         >
           {/* --- SaaS Header Section --- */}
           <div className="flex flex-col md:flex-row justify-between items-start mb-12 gap-6 border-b border-slate-100 pb-10">
             <motion.div variants={cardVariants}>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-violet-50 border border-violet-200 text-violet-600 rounded-full text-xs font-semibold tracking-wide mb-4 shadow-sm">
-                <span className="w-1.5 h-1.5 rounded-full bg-violet-500 animate-pulse"></span>
+              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#6633CC]/10 border border-[#6633CC]/25 text-[#6633CC] text-[11px] font-semibold tracking-wider uppercase mb-6">
+                {/* <span className="w-1.5 h-1.5 rounded-full bg-violet-500 animate-pulse"></span> */}
                 Support, Consultancy & Engineering
               </span>
               <h2 className="text-4xl font-black tracking-tight mb-4 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-600 bg-clip-text text-transparent">
@@ -1126,29 +1057,33 @@ function Services() {
           </div>
 
           {/* --- Continuous Flow Matrix --- */}
-          <div className="relative w-full">
+          <div className="relative w-full ">
             {/* Animated Spark Flow (Reference Styled) */}
-            <div className="hidden lg:block absolute top-[44px] left-0 right-0 h-8 z-0 pointer-events-none overflow-hidden">
+            <div className="hidden lg:block absolute top-[120px] left-0 right-0 h-3 z-0 pointer-events-none bg-violet-400/40">
               <motion.div
                 animate={{
-                  left: ["0%", "100%"],
+                  left: ["8.33%", "8.33%", "91.66%", "91.66%"],
+                  opacity: [0, 1, 1, 0],
                 }}
                 transition={{
-                  duration: 20,
+                  duration: 12,
                   repeat: Infinity,
+                  times: [0, 0.05, 0.95, 1],
                   ease: "linear",
                 }}
-                className="absolute top-1/2 -translate-y-1/2 w-48 h-8 flex items-center justify-end"
+                className="absolute top-1/2 -translate-y-1/2 w-32 h-[12px] flex items-center justify-center"
               >
-                <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-violet-400/60 to-[#6633CC]"></div>
+                {/* Trail */}
+                <div className="absolute right-0 w-32 h-[12px] "></div>
+                {/* Spark / Icon */}
                 <motion.div
                   animate={{ rotate: 360 }}
                   transition={{
-                    duration: 15,
+                    duration: 8,
                     repeat: Infinity,
                     ease: "linear",
                   }}
-                  className="flex-shrink-0 -ml-2 text-[#6633CC] drop-shadow-[0_0_12px_rgba(102,51,204,0.6)] bg-white rounded-full p-1 border border-violet-200"
+                  className="flex-shrink-0 text-[#6633CC] drop-shadow-[0_0_12px_rgba(102,51,204,0.6)] bg-white rounded-full p-1 border border-violet-200 relative z-10"
                 >
                   <Leaf className="w-4 h-4" />
                 </motion.div>
@@ -1157,39 +1092,49 @@ function Services() {
 
             {/* Straight Row of steps */}
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8 relative">
-              {/* Connector Line Background */}
-              <div className="hidden lg:block absolute top-[60px] left-0 right-0 h-[2px] bg-slate-100 z-0" />
+              {/* Connector Line Background Removed */}
 
               {steps.map((step, idx) => {
-                const centerTime = (idx * 2 + 1) / 12;
-                const startTime = Math.max(0, centerTime - 0.08);
-                const endTime = Math.min(1, centerTime + 0.08);
+                const centerTime = idx / 5;
+                const startTime = Math.max(0, centerTime - 0.1);
+                const endTime = Math.min(1, centerTime + 0.1);
 
                 return (
                   <motion.div
                     key={idx}
                     animate={{
-                      borderColor: ["#e2e8f0"],
-                      scale: [1, 1, 1.1, 1],
-                      zIndex: [10, 10, 30, 10],
+                      borderColor: [
+                        "#e2e8f0",
+                        "#e2e8f0",
+                        "#6633CC",
+                        "#e2e8f0",
+                        "#e2e8f0",
+                      ],
+                      scale: [1, 1, 1.1, 1, 1],
+                      zIndex: [10, 10, 30, 10, 10],
                       boxShadow: [
                         "0 0 0 rgba(102,51,204,0)",
                         "0 0 0 rgba(102,51,204,0)",
                         "0 20px 25px -5px rgba(102,51,204,0.15)",
                         "0 0 0 rgba(102,51,204,0)",
+                        "0 0 0 rgba(102,51,204,0)",
                       ],
                     }}
                     transition={{
-                      duration: 20,
+                      duration: 12,
                       repeat: Infinity,
-                      times: [0, startTime, centerTime, endTime],
+                      times: [0, startTime, centerTime, endTime, 1],
                       ease: "easeInOut",
                     }}
-                    className="group relative bg-white border-2 rounded-2xl p-5 transition-all duration-300"
+                    className="group relative bg-white border-1 rounded-2xl p-3 transition-all duration-300"
                   >
                     <div className="flex flex-col items-center text-center">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-violet-50 border border-violet-100 text-violet-600 group-hover:bg-violet-600 group-hover:text-white transition-all duration-300 mb-4">
-                        {step.icon}
+                      <div className="w-full h-32 rounded-xl overflow-hidden mb-4 border border-slate-100 bg-slate-50">
+                        <img
+                          src={step.image}
+                          alt={step.title}
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
                       </div>
                       <span className="text-[9px] font-bold tracking-widest text-slate-400 uppercase block mb-1">
                         Step 0{idx + 1}
@@ -1239,11 +1184,18 @@ function Testimonials() {
   }, []);
 
   return (
-    <section className="py-32 bg-[#F8F5FF] relative overflow-hidden">
+    <section className="py-24 bg-[#F8F5FF] relative overflow-hidden">
       <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
-        <div className="font-data text-[11px] font-black tracking-[0.4em] uppercase text-[#6633CC] mb-12">
-          Global Recognition
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#6633CC]/10 border border-[#6633CC]/25 text-[#6633CC] text-[11px] font-semibold tracking-wider uppercase mb-6">
+          Testimonials
         </div>
+        <h2 className="font-display font-black text-[clamp(32px,5vw,52px)] text-[#1A1A2E] mb-4">
+          Global Recognisation
+        </h2>
+        <p className="font-body text-[#6B7280] max-w-lg mx-auto text-base mb-12">
+          Trusted by leading research institutions and commercial producers
+          around the world.
+        </p>
 
         <AnimatePresence mode="wait">
           <motion.div
@@ -1254,7 +1206,7 @@ function Testimonials() {
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="bg-white p-12 md:p-16 rounded-[2rem] shadow-[0_8px_48px_rgba(102,51,204,0.06)] border border-[#6633CC]/5"
           >
-            <blockquote className="text-2xl md:text-3xl font-display font-bold text-[#1A1A2E] leading-tight mb-10 italic">
+            <blockquote className="text-2xl md:text-3xl font-display font-semibold text-[#1A1A2E] leading-tight mb-10 italic">
               "{quotes[active].quote}"
             </blockquote>
             <div className="flex flex-col items-center">

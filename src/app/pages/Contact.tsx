@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 import {
   Mail,
   Phone,
@@ -12,17 +12,43 @@ import {
   CheckCircle2,
   Building2,
   Sparkles,
+  ChevronDown,
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     company: "",
-    subject: "Technology",
+    subject: "Technologies (PBRs)",
     message: "",
   });
+
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  const enquiryTypes = [
+    "Technologies (PBRs)",
+    "Consumables & Media",
+    "Consultation Services",
+    "Technical Support",
+    "Other",
+  ];
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setIsDropdownOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -154,7 +180,7 @@ export function Contact() {
               </div>
 
               {/* Recruitment / Socials Card */}
-              <div className="p-8 rounded-[2rem] bg-[#1A1A2E] text-white relative overflow-hidden">
+              <div className="p-8 rounded-[2rem] bg-gradient-to-br from-[#6633CC] via-[#7C4EE4] to-[#A877EE] text-white relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#6633CC]/20 blur-[50px]" />
                 <div className="relative z-10">
                   <h3 className="text-xl font-display font-bold mb-4">
@@ -167,19 +193,19 @@ export function Contact() {
                   <div className="flex gap-4">
                     <a
                       href="#"
-                      className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white/10 transition-all"
+                      className="w-10 h-10 rounded-xl bg-white/5 border border-white/50 flex items-center justify-center hover:bg-white/10 transition-all"
                     >
                       <Linkedin className="w-5 h-5 text-[#C4A8FF]" />
                     </a>
                     <a
                       href="#"
-                      className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white/10 transition-all"
+                      className="w-10 h-10 rounded-xl bg-white/5 border border-white/50 flex items-center justify-center hover:bg-white/10 transition-all"
                     >
                       <Twitter className="w-5 h-5 text-[#C4A8FF]" />
                     </a>
                     <a
                       href="#"
-                      className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white/10 transition-all"
+                      className="w-10 h-10 rounded-xl bg-white/5 border border-white/50 flex items-center justify-center hover:bg-white/10 transition-all"
                     >
                       <Globe2 className="w-5 h-5 text-[#C4A8FF]" />
                     </a>
@@ -245,18 +271,61 @@ export function Contact() {
                       <label className="text-[11px] font-black text-[#1A1A2E] uppercase tracking-widest ml-1">
                         Enquiry Type
                       </label>
-                      <select
-                        className="w-full bg-[#F8F5FF] border border-transparent focus:border-[#6633CC]/30 focus:bg-white rounded-2xl px-6 py-4 outline-none transition-all text-[#1A1A2E] font-medium appearance-none cursor-pointer"
-                        onChange={(e) =>
-                          setFormData({ ...formData, subject: e.target.value })
-                        }
-                      >
-                        <option>Technologies (PBRs)</option>
-                        <option>Consumables & Media</option>
-                        <option>Consultation Services</option>
-                        <option>Technical Support</option>
-                        <option>Other</option>
-                      </select>
+                      <div className="relative" ref={dropdownRef}>
+                        <button
+                          type="button"
+                          onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                          className="w-full bg-[#F8F5FF] border border-transparent focus:border-[#6633CC]/30 focus:bg-white rounded-2xl px-6 py-4 outline-none transition-all text-[#1A1A2E] font-medium flex items-center justify-between group"
+                        >
+                          <span
+                            className={
+                              formData.subject
+                                ? "text-[#1A1A2E]"
+                                : "text-[#6B7280]/40"
+                            }
+                          >
+                            {formData.subject}
+                          </span>
+                          <ChevronDown
+                            className={`w-4 h-4 text-[#6633CC] transition-transform duration-300 ${isDropdownOpen ? "rotate-180" : ""}`}
+                          />
+                        </button>
+
+                        <AnimatePresence>
+                          {isDropdownOpen && (
+                            <motion.div
+                              initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                              animate={{ opacity: 1, y: 0, scale: 1 }}
+                              exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                              transition={{ duration: 0.2, ease: "easeOut" }}
+                              className="absolute z-50 left-0 right-0 mt-2 bg-white border border-[#6633CC]/10 rounded-2xl shadow-[0_10px_25px_-5px_rgba(102,51,204,0.1)] overflow-hidden"
+                            >
+                              <div className="p-1.5">
+                                {enquiryTypes.map((type) => (
+                                  <button
+                                    key={type}
+                                    type="button"
+                                    onClick={() => {
+                                      setFormData({
+                                        ...formData,
+                                        subject: type,
+                                      });
+                                      setIsDropdownOpen(false);
+                                    }}
+                                    className={`w-full text-left px-5 py-3.5 rounded-xl text-sm font-medium transition-colors ${
+                                      formData.subject === type
+                                        ? "bg-[#6633CC] text-white"
+                                        : "text-[#1A1A2E] hover:bg-[#F8F5FF]"
+                                    }`}
+                                  >
+                                    {type}
+                                  </button>
+                                ))}
+                              </div>
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
+                      </div>
                     </div>
                   </div>
 
@@ -283,7 +352,7 @@ export function Contact() {
                   </button>
 
                   <div className="flex items-center gap-2 justify-center text-[#6B7280] text-[10px] font-bold uppercase tracking-widest">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-green-500" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#6633CC]" />
                     Secure Data Transmission Guaranteed
                   </div>
                 </form>
