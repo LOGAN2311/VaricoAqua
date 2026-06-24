@@ -31,6 +31,11 @@ export default defineConfig({
     },
   },
 
+  server: {
+    // Allow dynamic ngrok subdomains used for sharing the local dev server.
+    allowedHosts: ['.ngrok-free.app'],
+  },
+
   // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
   assetsInclude: ['**/*.svg', '**/*.csv'],
 })
