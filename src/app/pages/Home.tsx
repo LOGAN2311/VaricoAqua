@@ -522,8 +522,7 @@ function Industries() {
         "Shrimp larviculture",
         "Live rotifer & Artemia culture",
       ],
-      image:
-        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=340&fit=crop&auto=format",
+      image: "/src/assets/Aquaculture.png",
     },
     {
       Icon: Atom,
@@ -537,7 +536,7 @@ function Industries() {
         "Pharmaceutical precursors",
         "University & R&D facilities",
       ],
-      image: biotechnologyImg,
+      image: "/src/assets/Biotechnology.png",
     },
     {
       Icon: Leaf,
@@ -551,8 +550,7 @@ function Industries() {
         "Wastewater bioremediation",
         "Circular bioeconomy systems",
       ],
-      image:
-        "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=600&h=340&fit=crop&auto=format",
+      image: "/src/assets/Agriculture.png",
     },
   ];
 
@@ -1252,10 +1250,10 @@ function CTA() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <button className="px-8 py-3.5 bg-white text-[#6633CC] rounded-2xl font-display font-black uppercase tracking-widest text-[13px] shadow-[0_15px_30px_rgba(0,0,0,0.15)] hover:scale-105 hover:bg-[#F3EEFF] transition-all active:scale-95">
-              Get a Quote
+              Get Quote
             </button>
             <button className="px-8 py-3.5 bg-transparent border-2 border-white/40 text-white rounded-2xl font-display font-black uppercase tracking-widest text-[13px] backdrop-blur-sm hover:bg-white/10 transition-all active:scale-95">
-              Talk to an Engineer
+              Talk to an Expert
             </button>
           </div>
         </motion.div>

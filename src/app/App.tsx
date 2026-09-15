@@ -403,7 +403,7 @@ function Navbar() {
             to="/contact"
             className="inline-flex items-center justify-center rounded-full bg-[#6633CC] px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-200 ease-in-out hover:bg-[#7e4edd] hover:shadow-md hover:-translate-y-0.5"
           >
-            Get a Quote
+            Get Quote
           </Link>
           <button
             onClick={() => setOpen(!open)}
