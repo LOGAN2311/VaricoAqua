@@ -117,7 +117,7 @@ function Hero() {
               whileTap={{ scale: 0.98 }}
               className="px-10 py-4 bg-gradient-to-r from-[#6633CC] to-[#8B5CF6] text-white font-display font-black text-[13px] tracking-[0.2em] uppercase rounded-full transition-all flex items-center gap-3 relative overflow-hidden group"
             >
-              <span className="relative z-10">Book a Demo</span>
+              <span className="relative z-10">Buy Now</span>
               <ArrowRight className="w-4 h-4 relative z-10 transition-transform group-hover:translate-x-1" />
               <div className="absolute inset-0 bg-gradient-to-r from-[#8B5CF6] to-[#6633CC] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </motion.a>
@@ -132,7 +132,7 @@ function Hero() {
               whileTap={{ scale: 0.98 }}
               className="px-10 py-4 border-2 border-[#FFFFFF] text-[#FFFFFF] font-display font-black text-[13px] tracking-[0.2em] uppercase rounded-full backdrop-blur-xs transition-all flex items-center gap-3"
             >
-              Talk to Us
+              Talk to an Expert
             </motion.a>
           </div>
         </motion.div>
