@@ -22,7 +22,7 @@ import {
   Award,
   Users,
 } from "lucide-react";
-import heroVideo from "../../assets/hero_bg.mp4";
+import heroBackground from "../../assets/Hero_Bg.png";
 // Use better local images for these placeholders if they exist, or fix paths
 import aquacultureImg from "../../assets/HDRS™ Rotifer System.png";
 import biotechnologyImg from "../../assets/Phyco-Flow.png";
@@ -31,35 +31,19 @@ import biotechnologyImg from "../../assets/Phyco-Flow.png";
    HERO SECTION
 ───────────────────────────────────────────────────────────────── */
 function Hero() {
-  const [videoLoaded, setVideoLoaded] = useState(false);
-
   return (
     <section className="relative h-screen w-full flex items-center justify-center overflow-hidden ">
-      {/* Cinematic Video Background */}
-      <div className="absolute inset-0 z-0 ">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          onLoadedData={() => setVideoLoaded(true)}
-          className={`w-full h-full object-cover transition-opacity  duration-1000 ${
-            videoLoaded ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <source src={heroVideo} type="video/mp4" />
-        </video>
-        {!videoLoaded && (
-          <img
-            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
-            className="w-full h-full object-cover opacity-100 scale-105 "
-            alt="Algae Cultivation"
-          />
-        )}
+      {/* Hero Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src={heroBackground}
+          alt="Algae cultivation facility"
+          className="w-full h-full object-cover scale-105"
+        />
 
-        {/* Deep Industrial Overlays */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#16002e] via-transparent to-[#16002e]" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#16002e] via-transparent to-[#16002e]" />
+        {/* Radial center highlight for content emphasis */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(21,5,34,0.08),_rgba(21,5,34,0.32)_28%,_rgba(21,5,34,0.7)_58%,_rgba(21,5,34,0.88)_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.18),_rgba(255,255,255,0)_50%,_rgba(8,8,16,0.18)_100%)]" />
         {/* Liquid Glass Blobs - Matching Video Biology (Teal/Purple) */}
         <motion.div
           animate={{
