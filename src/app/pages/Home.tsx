@@ -25,7 +25,9 @@ import {
 import heroBackground from "../../assets/Hero_Bg.png";
 // Use better local images for these placeholders if they exist, or fix paths
 import aquacultureImg from "../../assets/HDRS™ Rotifer System.png";
-import biotechnologyImg from "../../assets/Phyco-Flow.png";
+import industriesAquacultureImg from "../../assets/Aquaculture.png";
+import industriesBiotechnologyImg from "../../assets/Biotechnology.png";
+import industriesAgricultureImg from "../../assets/Agriculture.png";
 
 /* ─────────────────────────────────────────────────────────────────
    HERO SECTION
@@ -522,7 +524,7 @@ function Industries() {
         "Shrimp larviculture",
         "Live rotifer & Artemia culture",
       ],
-      image: "/src/assets/Aquaculture.png",
+      image: industriesAquacultureImg,
     },
     {
       Icon: Atom,
@@ -536,7 +538,7 @@ function Industries() {
         "Pharmaceutical precursors",
         "University & R&D facilities",
       ],
-      image: "/src/assets/Biotechnology.png",
+      image: industriesBiotechnologyImg,
     },
     {
       Icon: Leaf,
@@ -550,7 +552,7 @@ function Industries() {
         "Wastewater bioremediation",
         "Circular bioeconomy systems",
       ],
-      image: "/src/assets/Agriculture.png",
+      image: industriesAgricultureImg,
     },
   ];
 
