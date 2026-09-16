@@ -118,7 +118,7 @@ function Hero() {
               whileTap={{ scale: 0.98 }}
               className="px-10 py-4 border-2 border-[#FFFFFF] text-[#FFFFFF] font-display font-black text-[13px] tracking-[0.2em] uppercase rounded-full backdrop-blur-xs transition-all flex items-center gap-3"
             >
-              Talk to an Expert
+              Talk to Expert
             </motion.a>
           </div>
         </motion.div>
@@ -1255,7 +1255,7 @@ function CTA() {
               Get Quote
             </button>
             <button className="px-8 py-3.5 bg-transparent border-2 border-white/40 text-white rounded-2xl font-display font-black uppercase tracking-widest text-[13px] backdrop-blur-sm hover:bg-white/10 transition-all active:scale-95">
-              Talk to an Expert
+              Talk to Expert
             </button>
           </div>
         </motion.div>
